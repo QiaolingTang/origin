@@ -9,17 +9,17 @@ import (
 var (
 	//CLO resource files to create subscription for cluster-logging-operator
 	CLO = OperatorObjects{
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/clusterlogging/OCP-21311/namespace.yaml",
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/clusterlogging/OCP-21311/operator-group.yaml",
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/clusterlogging/OCP-21311/csc-clusterlogigng.yaml",
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/clusterlogging/OCP-21311/sub-cluster-logging.yaml"}
+		"test/extended/testdata/clusterlogging/deployment/01-clo-project.yaml",
+		"test/extended/testdata/clusterlogging/deployment/02-clo-og.yaml",
+		"test/extended/testdata/clusterlogging/deployment/03-clo-csc.yaml",
+		"test/extended/testdata/clusterlogging/deployment/04-clo-sub.yaml"}
 	//EO resource files to create subscription for elasticsearch-operator
 	EO = OperatorObjects{
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/eleasticsearch/deploy_via_cli/01_eo-project.yaml",
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/eleasticsearch/deploy_via_cli/02_eo-og.yaml",
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/eleasticsearch/deploy_via_cli/03_eo-csc.yaml",
-		"https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/eleasticsearch/deploy_via_cli/05_eo-sub.yaml"}
-	rbac = "https://raw.githubusercontent.com/openshift-qe/v3-testfiles/master/logging/eleasticsearch/deploy_via_cli/04_eo-rbac.yaml"
+		"test/extended/testdata/clusterlogging/deployment/01_eo-project.yaml",
+		"test/extended/testdata/clusterlogging/deployment/02_eo-og.yaml",
+		"test/extended/testdata/clusterlogging/deployment/03_eo-csc.yaml",
+		"test/extended/testdata/clusterlogging/deployment/05_eo-sub.yaml"}
+	rbac = "test/extended/testdata/clusterlogging/deployment/04_eo-rbac.yaml"
 )
 
 var _ = g.Describe("[Feature:Logging]Logging", func() {
